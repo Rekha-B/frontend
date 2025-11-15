@@ -62,11 +62,27 @@ git push -u origin main
 
 Deploy to the cloud easily! See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed instructions.
 
-**Quick deploy with Vercel:**
+### Stable Production URL
+
+Your app has a **stable production URL** that doesn't change: `https://frontend-green-ten-90.vercel.app`
+
+See [STABLE_PRODUCTION_URL.md](./STABLE_PRODUCTION_URL.md) for details.
+
+### Quick Deploy
+
+**Deploy to production (stable URL):**
 ```bash
-npm install -g vercel
-vercel login
-vercel
+npm run deploy
+```
+
+Or use the PowerShell script:
+```bash
+.\deploy.ps1
+```
+
+**Deploy to preview (temporary URL):**
+```bash
+npm run deploy:preview
 ```
 
 ## Technologies
